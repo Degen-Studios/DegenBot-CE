@@ -1,0 +1,4 @@
+name = "degenbot"
+
+[shuttle]
+image = "rust:latest"

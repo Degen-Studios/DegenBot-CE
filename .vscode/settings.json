@@ -1,0 +1,19 @@
+{
+    "cSpell.words": [
+        "BGRA",
+        "degenme",
+        "Deque",
+        "dptree",
+        "imdecode",
+        "imencode",
+        "imgcodecs",
+        "imgproc",
+        "imread",
+        "opencv",
+        "reqwest",
+        "splitn",
+        "teloxide",
+        "thiserror"
+    ],
+    "cody.chat.preInstruction": "Ensure you reference Cargo.toml for every possible code example.  If there are recommended code changes or code change requests please only provide 100% complete code file updates with nothing omitted from the file or files at all."
+}

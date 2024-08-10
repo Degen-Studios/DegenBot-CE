@@ -1,0 +1,8 @@
+[debug]
+log_level = "info"
+
+[telegram]
+enabled = true
+
+[discord]
+enabled = false

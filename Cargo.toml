@@ -1,0 +1,129 @@
+##
+#
+# This project is a Rust Project
+# Rust docs are here
+# https://docs.rs
+#
+# This project is being deployed
+# to https://shuttle.rs
+#
+# Shuttle Crate Docs:
+# https://docs.shuttle.rs/introduction/welcome
+# https://docs.rs/shuttle/latest/shuttle/
+# https://github.com/shuttle-hq/shuttle
+#
+# Shuttle Examples:
+# https://github.com/shuttle-hq/shuttle-examples
+#
+##
+
+[package]
+name = "degenbot"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+build = "build.rs"
+
+[lints.rust]
+dead_code = "allow"
+
+# We have listed the github for each of the packages
+# Below for reference purposes
+
+[dependencies]
+# https://docs.rs/shuttle-runtime/latest/shuttle_runtime/
+shuttle-runtime = "0.47.0"
+
+# https://github.com/tokio-rs/axum
+# https://docs.rs/axum/latest/axum/
+axum = "0.7.4"
+
+# https://github.com/ihrwein/backoff
+# https://docs.rs/backoff/latest/backoff/
+backoff = { version = "0.4.0", features = ["futures"] }
+
+# https://github.com/endoli/commands.rs
+# https://docs.rs/commands/latest/commands/
+commands = "0.0.5"
+
+# https://github.com/teloxide/dptree
+# https://docs.rs/dptree/latest/dptree/
+dptree = "0.3.0"
+
+# https://github.com/rust-cli/env_logger
+# https://docs.rs/env_logger/latest/env_logger/
+env_logger = "0.11.3"
+
+# https://github.com/rust-lang/log
+# https://docs.rs/log/latest/log/
+log = "0.4.22"
+
+# https://github.com/twistedfall/opencv-rust
+# https://docs.rs/opencv/latest/opencv/
+# https://github.com/opencv/opencv
+# https://docs.rs/opencv/latest/opencv/video/index.html
+# https://docs.rs/opencv/latest/opencv/videoio/index.html
+# https://docs.rs/opencv/latest/opencv/videostab/index.html
+# https://docs.rs/opencv/latest/opencv/viz/index.html
+# https://docs.rs/opencv/latest/opencv/xfeatures2d/index.html
+# https://docs.rs/opencv/latest/opencv/ximgproc/index.html
+# https://docs.rs/opencv/latest/opencv/xobjdetect/index.html
+# https://docs.rs/opencv/latest/opencv/xphoto/index.html
+# https://docs.rs/opencv/latest/opencv/imgcodecs/fn.imread.html
+# https://docs.rs/opencv/latest/opencv/cudacodec/index.html
+opencv = { version = "0.92.0", features = ["highgui", "features2d", "clang-runtime"] }
+
+# https://github.com/seanmonstar/reqwest
+# https://docs.rs/reqwest/latest/reqwest/
+reqwest = { version = "0.12.5", features = ["json", "stream"] }
+
+# https://github.com/serde-rs/serde
+# https://docs.rs/serde/latest/serde/
+serde = { version = "1.0.204", features = ["derive"] }
+
+# https://github.com/serde-rs/json
+# https://docs.rs/serde_json/latest/serde_json/
+serde_json = "1.0.120"
+
+# https://github.com/serenity-rs/serenity
+# https://docs.rs/serenity/latest/serenity/
+serenity = "0.12.2"
+
+# https://github.com/teloxide/teloxide
+# https://docs.rs/teloxide/latest/teloxide/
+teloxide = { version = "0.12.2", features = ["macros", "auto-send", "rustls", "ctrlc_handler"] }
+
+# https://github.com/dtolnay/thiserror
+# https://docs.rs/serenity/latest/serenity/
+thiserror = "1.0.61"
+
+# https://github.com/tokio-rs/tokio
+# https://docs.rs/tokio/latest/tokio/
+tokio = { version = "1.38.0", features = ["full"] }
+
+# https://github.com/tokio-rs/tokio/tree/master/tokio-util
+# https://docs.rs/tokio-util/latest/tokio_util/
+tokio-util = { version = "0.7.10", features = ["codec"] }
+
+# https://github.com/toml-rs/toml/tree/main/crates/toml
+# https://docs.rs/toml/latest/toml/
+toml = "0.8.14"
+
+# https://docs.rs/url/latest/url/
+url = "2.5.2"
+
+# https://docs.rs/crate/shuttle-axum/latest
+shuttle-axum = "0.47.0"
+
+# https://docs.rs/tower-http/latest/tower_http/
+tower-http = { version = "0.5.2", features = ["trace"] }
+pretty_env_logger = "0.5.0"
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = false
+incremental = false
+
+[profile.dev]
+incremental = true
