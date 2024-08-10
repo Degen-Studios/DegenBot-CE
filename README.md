@@ -30,8 +30,10 @@ To change the "Welcome Message" go to `src/commands/start.rs` and edit the `resp
 If you'd like to replace the "hands" from Degen POV you can find the existing ones in the `img` directory so you can be made aware of dimensions.
 
 ## Step 4 - Deploy
+You will need to follow these instructions to ensure local libraries are installed for necessary packages before deploying DegenBot:
+<a href="https://github.com/shuttle-hq/shuttle/issues/703#issuecomment-1515606621" target="_blank">https://github.com/shuttle-hq/shuttle/issues/703#issuecomment-1515606621</a>
 
-Deploy to Shuttle (if youo're unfamiliar it's like Vercel for NextJS and Heroku, except it's for Rust)
+Deploy to Shuttle (if you're unfamiliar it's like Vercel for NextJS and Heroku, except it's for Rust)
 
 Here is the Shuttle Installation Directions for Shuttle
 <a href="https://docs.shuttle.rs/getting-started/installation" target="_blank">Installation - Shuttle</a>
