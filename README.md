@@ -1,8 +1,10 @@
 This readme assumes you have familiarity with Git
 
-## Step 1 - Install Rust
+## Step 1 - Install Rust & OpenCV
 
-It has plenty of documentation, head on over to <a href="https://www.rust-lang.org/" target="_blank">https://www.rust-lang.org/</a> to learn how to install it and update it.
+They have plenty of documentation, head on over to <a href="https://www.rust-lang.org/" target="_blank">https://www.rust-lang.org/</a> to learn how to install and update Rust.
+
+For OpenCV (which is also required) follow it's install instructions here: <a href="https://github.com/twistedfall/opencv-rust/blob/master/INSTALL.md" target="_blank">https://github.com/twistedfall/opencv-rust/blob/master/INSTALL.md</a>.
 
 ## Step 2 - Clone it
 
